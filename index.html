@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<center>
+    <h1>セキュリティーチェックです(もう一回あります)</h1>
+    <head>
+        <title>セキュリティーチェック</title>
+    </head>
+    <body>
+        <label for="password">pwを入力してください:</label>
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="checkPassword()">決定</button>
+
+        <script>
+            function checkPassword() {
+                var enteredPassword = document.getElementById("password").value;
+
+                if (enteredPassword === "file") {
+                    // Password is correct, redirect to another site
+                    window.location.href = "https://google.com"; // Replace with the desired URL
+                } else {
+                    // Password is incorrect, handle accordingly
+                    alert("pwが違います");
+                }
+            }
+        </script>
+    </body>
+</html>
