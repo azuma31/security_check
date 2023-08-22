@@ -1,30 +1,51 @@
 ﻿<!DOCTYPE html>
 <html>
-<center>
-    <h1>セキュリティーチェックです🔒(もう一回あります)</h1>
-    <head>
-        <title>セキュリティーチェック🔒</title>
-    </head>
-    <body>
-        <label for="password">pwを入力してください:</label>
-        <input type="password" id="password" placeholder="Password">
-        <button onclick="checkPassword()">決定</button>
-        <script>
-            function checkPassword() {
-                var enteredPassword = document.getElementById("password").value;
+<head>
+    <title>セキュリティーチェック🔒</title>
+    <style>
+        body {
+            font-size: 20px; /* ベースのフォントサイズを大きくします */
+        }
 
-                if (enteredPassword === "file") {
-                    // Password is correct, redirect to another site
-                    window.location.href = "https://azuma31.github.io/file_downloader/"; // Replace with the desired URL
-                } else {
-                    // Password is incorrect, handle accordingly
-                    alert("pwが違います");
-                }
+        h1 {
+            font-size: 36px; /* 見出しのフォントサイズを大きくします */
+        }
+
+        label, input, button {
+            font-size: 45px; /* ラベル、入力フィールド、ボタンのフォントサイズを大きくします */
+        }
+
+        img {
+            width: 5%; /* 画像のサイズを大きくします */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>セキュリティーチェックです🔒(もう一回あります)</h1>
+    </center>
+    <label for="password">　　　　pwを入力してください:</label>
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="checkPassword()">決定</button>
+    <script>
+        function checkPassword() {
+            var enteredPassword = document.getElementById("password").value;
+
+            if (enteredPassword === "file") {
+                // Password is correct, redirect to another site
+                window.location.href = "https://azuma31.github.io/file_downloader/"; // Replace with the desired URL
+            } else {
+                // Password is incorrect, handle accordingly
+                alert("pwが違います");
             }
-        </script>
-        <br />
-        <br />
-        <br />
-        <img src="鍵.png" alt="画像の説明" style="width: 15%; height: auto;">
-    </body>
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <center>
+        <img src="鍵.png" alt="画像の説明" style="width: 30%; height: auto;">
+    </center>
+</body>
 </html>
